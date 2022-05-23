@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'JetBrains Mono';
+    color: white;
+}
+
+
+/*Navabar*/
+
+nav img {
+    height: 6vh;
+    padding: 0.5vh;
+}
+
+nav {
+    font-size: 2vh;
+    font-weight: 400;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(12, 124, 236), rgb(137, 218, 238));
+    list-style-type: none;
+    gap: 3vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 3vh;
+}
+
+.navigation-bar a {
+    color: white;
+}
+
+.navigation-bar a:hover {
+    text-decoration: none;
+}
+
+#contact span {
+    background-color: white;
+    color: rgb(68, 150, 233);
+    border-radius: 25px;
+    padding: 0.7vh 5vh;
+    text-decoration: underline rgb(68, 150, 233);
+}
+
+#contact span:hover {
+    text-decoration: none;
+}
+
+
+/* nav li+li::before {
+    content: ' ';
+} */
+
+
+/*Header*/
+
+header {
+    height: 1100px;
+    font-size: 1.05rem;
+    position: relative;
+    background-image: linear-gradient(to left, rgb(12, 124, 236), rgb(137, 218, 238));
+    width: 100%;
+}
+
+header:after {
+    content: '';
+    background: url('../images/pexels-pixabay-301664.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: soft-light;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1653210462 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1653210462 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 479px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1653210462 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 5vh;
+    padding-top: 300px;
+}
+
+
+/*Texts*/
+
+h1 {
+    font-size: 7vh;
+    text-align: center;
+}
+
+p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+
+/*About*/
+
+.names {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    color: black;
+}
+
+#about {
+    font-weight: 700;
+    margin: 10vh;
+}
+
+.circle {
+    width: 15vw;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(137, 218, 238);
+    font-size: 2vh;
+    font-weight: 700;
+    box-shadow: 8px 8px 4px rgba(191, 191, 191, 0.366);
+    border-radius: 50%;
+    width: 10vw;
+    height: 20vh;
+    margin: 5vh;
+    text-align: center;
+}
+
+.names div p {
+    font-size: 2vh;
+    margin-bottom: 6vh;
+}
+
+
+/*Portfolio*/
+
+.portfolio {
+    color: black;
+    margin-bottom: 7vh;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20vh;
+    margin-top: 10vh;
+}
+
+.projects h1 {
+    font-size: 5vh;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.05vh solid black;
+    border-radius: 3vh;
+    height: 25vh;
+    width: 25vh;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 3vh;
+}
+
+
+/*Footer*/
+
+footer {
+    background-image: linear-gradient(to left, rgb(12, 124, 236), rgb(137, 218, 238));
+    height: 50vh;
+}
+
+#contactus {
+    font-size: 8vh;
+}
+
+#footer {
+    font-size: 2vh;
+}
+
+.text {
+    margin-left: 0;
+}
+
+
+/*Form*/
+
+.form {
+    padding: 2vh 0 2vh 0;
+    right: 1.5vh;
+    width: 50vh;
+    opacity: 0.6;
+}
+
+#name,
+#email,
+#subject,
+#message,
+#submit {
+    border-radius: 1vh;
+    border: none;
+    margin: 0.7vh 0 0.7vh 0;
+}
+
+#name::placeholder,
+#email::placeholder,
+#subject::placeholder,
+#submit::placeholder,
+#message::placeholder {
+    opacity: 0.5;
+    font-size: 3vh;
+}
+
+#name,
+#email,
+#subject,
+#submit {
+    height: 10vh;
+}
+
+#message {
+    height: 30vh;
+}
+
+#submit {
+    height: 10vh;
+    background-color: rgb(179, 229, 241);
+    color: white;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(79, 203, 190) !important;
+}
+
+@media only screen and (max-width: 700px) {
+    nav,
+    header,
+    .about,
+    .circle,
+    .portfolio,
+    .projects,
+    footer {
+        width: 100vh;
+    }
+    .aboutus {
+        width: 10vh;
+        height: 10vh;
+    }
+    .projects {
+        display: flex;
+        justify-content: center;
+        gap: 10vh;
+        margin-top: 10vh;
+    }
+    .projects h1 {
+        font-size: 5vh;
+    }
+    .projects div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.05vh solid black;
+        border-radius: 3vh;
+        height: 25vh;
+        width: 25vh;
+        text-align: center;
+        margin-top: 3vh;
+        font-size: 3vh;
+    }
+}
