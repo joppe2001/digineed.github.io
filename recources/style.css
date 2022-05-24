@@ -30,6 +30,7 @@ nav {
     background-image: linear-gradient(to left, rgb(12, 124, 236), rgb(137, 218, 238));
     list-style-type: none;
     gap: 3vh;
+    padding: 0 6vh;
 }
 
 nav ul {
