@@ -166,6 +166,7 @@ p {
     height: 20vh;
     margin: 5vh;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .names div p {
