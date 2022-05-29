@@ -186,6 +186,7 @@ p {
     justify-content: center;
     gap: 20vh;
     margin-top: 10vh;
+    flex-wrap: wrap;
 }
 
 .projects h1 {
